@@ -1,0 +1,285 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background-color: #e3f1fe;">
+    <div class="container-fluid" id="mycontainer">
+        <div class="row banner">
+            <div class="col-lg-3 left-counter bold-text">
+                <span class="heading-content">0.00</span>
+            </div>
+            <div class="col-lg-6 bold-text text-center">
+                <span class="heading-content">A J Bush & Sons (Manufactures) PTY LTD</span>
+            </div>
+            <div class="col-lg-3 right-counter bold-text">
+                <span class="heading-content">0.00</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 bold-text text-center">
+                <span class="heading-content">Riverstone NSW</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 sizes text-center bold-text">
+                <span>LARGE</span>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-3 sizes text-center bold-text">
+                <span>SMALL</span>
+            </div>
+        </div>
+        <div class="mb-3"></div>
+        <div class="row main-container">
+            <div class="col-lg-2 main-navigations overflow-y-auto" style="padding-left:5px;padding-right:5px;">
+                <div class="main-navigation" id="main-navigation-1">
+                    <div class="main-navigation-header">
+                        <div class="col-sm-9 nav-title" style="padding-left:0">Weighing</div>
+                        <div class="col-sm-3">
+                            <span class="toggle-icon text-right cursor-pointer" id="nav-1"></span>
+                        </div>
+
+                    </div>
+                    <div class="main-navigation-body overflow-y-auto" id="nav-items-1">
+                        <div class="list-menus">
+                            <span><a href="#">Weighbridge</a></span>
+                            <span><a href="#">History</a></span>
+                            <span><a href="#">Products</a></span>
+                            <span><a href="#">Customers</a></span>
+                            <span><a href="#">Receival Trucks</a></span>
+                            <span><a href="#">Dispatch Trucks</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3"></div>
+                <div class="main-navigation" id="main-navigation-2">
+                    <div class="main-navigation-header">
+                        <div class="col-sm-9 nav-title" style="padding-left:0">Reports</div>
+                        <div class="col-sm-3">
+                            <span class="toggle-icon text-right cursor-pointer" id="nav-2"></span>
+                        </div>
+
+                    </div>
+                    <div class="main-navigation-body overflow-y-auto" id="nav-items-2">
+                        <div class="list-menus">
+                            <span><a href="#">Receivals</a></span>
+                            <span><a href="#">Design Receival...</a></span>
+                            <span><a href="#">Dispatches</a></span>
+                            <span><a href="#">Design Dispatch</a></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3"></div>
+                <div class="main-navigation closed" id="main-navigation-3">
+                    <div class="main-navigation-header">
+                        <div class="col-sm-9 nav-title" style="padding-left:0">Admin</div>
+                        <div class="col-sm-3">
+                            <span class="toggle-icon text-right closed cursor-pointer" id="nav-3"></span>
+                        </div>
+                        
+                    </div>
+                    <div class="main-navigation-body overflow-y-auto" id="nav-items-3" hidden>
+                        <div class="list-menus">
+                            <span><a href="#">Weighbridge</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 main-content">
+                <div class="col-lg-12">
+                    <div class="col-lg-9">
+                        <table class="table" id="section1">
+                            <tbody>
+                                <tr>
+                                    <td class="text-right bold-text f-2">Choose Direction</td>
+                                    <td><button class="button-action active" id="receival-btn">Receival</button></td>
+                                    <td><button class="button-action" id="dispatch-btn">Dispatch</button></td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td class="text-right bold-text f-2">Enter Route No.</td>
+                                    <td colspan="2">
+                                        <select name="routeNo" class="select-input" id="routeNo" tabindex="0">
+                                            <option value="">--Select--</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td class="text-right bold-text f-2">Name</td>
+                                    <td colspan="2">
+                                        <input type="text" name="routeName" id="routeName" class="classic-input"
+                                            tabindex="0">
+                                    </td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td class="text-right bold-text f-2">Raw Material Name</td>
+                                    <td colspan="2">
+                                        <input type="text" name="rawMaterialName" id="rawMaterialName"
+                                            class="classic-input" tabindex="0">
+                                    </td>
+                                </tr>
+                                <tr style="visibility: hidden;" class="receival-inputs">
+                                    <td class="text-right bold-text f-2">Raw Material Name</td>
+                                    <td colspan="2">
+                                        <input type="text" name="rawMaterialName" id="rawMaterialName"
+                                            class="classic-input" tabindex="0">
+                                    </td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td class="text-right bold-text f-2">Choose a Customer</td>
+                                    <td colspan="2">
+                                        <select name="customer" class="select-input" id="customer" tabindex="0">
+                                            <option value="">--Select--</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td class="text-right bold-text f-2">Choose a truck name</td>
+                                    <td colspan="2">
+                                        <select name="truckName" class="select-input" id="truckName" tabindex="0">
+                                            <option value="">--Select--</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td class="text-right bold-text f-2">Enter a Reg No.</td>
+                                    <td colspan="2">
+                                        <select name="regNo" class="select-input" id="regNo" tabindex="0">
+                                            <option value="">--Select--</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td class="text-right bold-text f-2">Choose a Product name</td>
+                                    <td colspan="2">
+                                        <select name="productName" class="select-input" id="productName" tabindex="0">
+                                            <option value="">--Select--</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <div class="col-lg-12" style="border: 1px solid #8bb5d8;">
+                    <div class="col-lg-9">
+                        <table class="table" id="section2">
+                            <tbody>
+                                <tr>
+                                    <td class="text-right bold-text f-2">Choose a Weighbridge</td>
+                                    <td><button class="button-action" id="large-btn">Large</button></td>
+                                    <td><button class="button-action" id="small-btn">Small</button></td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td rowspan="4" class="text-right bold-text v-align-middle f-4 text-upper">Receival
+                                    </td>
+                                    <td colspan="2">
+                                        <button class="sec2-buttons" id="grossInBtn">Gross In</button>
+                                        <span class="black-empty"></span>
+                                    </td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td colspan="2">
+                                        <button class="sec2-buttons disabled" id="tareOutBtn">Tare Out</button>
+                                        <span class="black-empty"></span>
+                                    </td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td colspan="2"><button class="sec2-buttons disabled" id="printReceivalBtn">Print Ticket</button></td>
+                                </tr>
+                                <tr class="receival-inputs">
+                                    <td colspan="2"><button class="sec2-buttons" id="receivalClearBtn">Clear</button></td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td rowspan="4" class="text-right bold-text v-align-middle f-4 text-upper">DISPATCH
+                                    </td>
+                                    <td colspan="2"><button class="sec2-buttons" id="tareInBtn">Tare In</button><span class="black-empty"></span></td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td colspan="2"><button class="sec2-buttons disabled" id="grossOutBtn">Gross Out</button><span class="black-empty"></span></td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td colspan="2"><button class="sec2-buttons disabled" id="printDispatchBtn">Print Ticket</button></td>
+                                </tr>
+                                <tr class="dispatch-inputs">
+                                    <td colspan="2"><button class="sec2-buttons" id="clearDispatchBtn">Clear</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+                <div class="col-lg-12" style="border: 1px solid #8bb5d8;">
+                    <div class="col-lg-6" style="border-right: 1px solid #89b4e2;">
+                        <div class="receival-log">
+                            <button class="log-button">Receival Log</button>
+                            <div class="receival-log-table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Time In</th>
+                                            <th>Route No</th>
+                                            <th>Route Name</th>
+                                            <th>Raw Material Name</th>
+                                            <th>Weight In</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="5" style="text-align: center;">No results found</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="dispatch-log">
+                            <button class="log-button">Dispatch Log</button>
+                            <div class="dispatch-log-table">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Time In</th>
+                                            <th>Customer Name</th>
+                                            <th>Reg No</th>
+                                            <th>Tare In</th>
+                                            <th>Weight Out</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center" colspan="5">No results found</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                            <td>ABC</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
