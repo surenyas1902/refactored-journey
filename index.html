@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -80,7 +81,7 @@
                         <div class="col-sm-3">
                             <span class="toggle-icon text-right closed cursor-pointer" id="nav-3"></span>
                         </div>
-                        
+
                     </div>
                     <div class="main-navigation-body overflow-y-auto" id="nav-items-3" hidden>
                         <div class="list-menus">
@@ -189,24 +190,30 @@
                                     </td>
                                 </tr>
                                 <tr class="receival-inputs">
-                                    <td colspan="2"><button class="sec2-buttons disabled" id="printReceivalBtn">Print Ticket</button></td>
+                                    <td colspan="2"><button class="sec2-buttons" id="printReceivalBtn">Print
+                                            Ticket</button></td>
                                 </tr>
                                 <tr class="receival-inputs">
-                                    <td colspan="2"><button class="sec2-buttons" id="receivalClearBtn">Clear</button></td>
+                                    <td colspan="2"><button class="sec2-buttons" id="receivalClearBtn">Clear</button>
+                                    </td>
                                 </tr>
                                 <tr class="dispatch-inputs">
                                     <td rowspan="4" class="text-right bold-text v-align-middle f-4 text-upper">DISPATCH
                                     </td>
-                                    <td colspan="2"><button class="sec2-buttons" id="tareInBtn">Tare In</button><span class="black-empty"></span></td>
+                                    <td colspan="2"><button class="sec2-buttons" id="tareInBtn">Tare In</button><span
+                                            class="black-empty"></span></td>
                                 </tr>
                                 <tr class="dispatch-inputs">
-                                    <td colspan="2"><button class="sec2-buttons disabled" id="grossOutBtn">Gross Out</button><span class="black-empty"></span></td>
+                                    <td colspan="2"><button class="sec2-buttons disabled" id="grossOutBtn">Gross
+                                            Out</button><span class="black-empty"></span></td>
                                 </tr>
                                 <tr class="dispatch-inputs">
-                                    <td colspan="2"><button class="sec2-buttons disabled" id="printDispatchBtn">Print Ticket</button></td>
+                                    <td colspan="2"><button class="sec2-buttons disabled" id="printDispatchBtn">Print
+                                            Ticket</button></td>
                                 </tr>
                                 <tr class="dispatch-inputs">
-                                    <td colspan="2"><button class="sec2-buttons" id="clearDispatchBtn">Clear</button></td>
+                                    <td colspan="2"><button class="sec2-buttons" id="clearDispatchBtn">Clear</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -242,7 +249,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            
+
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -279,6 +286,251 @@
             </div>
         </div>
     </div>
+
+    <div class="micromodal micromodal-slide" id="receival-print-ticket2" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="micromodal__container" style="width: 400px;" role="dialog" aria-modal="true"
+                aria-labelledby="modal-1-title">
+                <header class="micromodal__header">
+                    <h2 class="micromodal__title" id="modal-1-title">
+                        A J Bush & Sons - Weighbridge Recording
+                    </h2>
+                    <button class="micromodal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="micromodal__content" id="print-ticket-content2">
+                    <div style="width: 100%;">
+                        <div style="text-align:center;font-weight: bold;font-size:18px;margin-bottom: 15px;">AJ Bush & Sons Pty Ltd</div>
+                        <div>Receival</div>
+                        <div>Ticket No. #00017886</div>
+                        <br>
+                        <div>Time In&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 07:43:51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;22/09/2020</div>
+                        <div>Time Out&nbsp;&nbsp; 07:43:51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date&nbsp;&nbsp;&nbsp;22/09/2020</div>
+                        <br>
+                        <div style="width: 100%;display: flex;">
+                            <span style="width: 30%;">Truck Rego</span>
+                            <span style="width: 60%;">616TDG</span>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <span style="width: 30%;">Unit No</span>
+                            <span style="width: 60%;">UNIT</span>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <span style="width: 30%;">PIT</span>
+                            <span style="width: 60%;">5</span>
+                        </div>
+                        <br>
+                        <div style="width: 100%;display: flex;">
+                            <span style="width: 30%;">Supplier</span>
+                            <span style="width: 60%;">SHAUN R50</span>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <span style="width: 30%;">Product</span>
+                            <span style="width: 60%;">FAT & BONE</span>
+                        </div>
+                        <br><br>
+                        <div style="width: 100%;display:flex;">
+                            <span style="width:25%;">Gross</span>
+                            <span style="width:25%;">16.04t</span>
+                            <span style="width:25%;">deck 1</span>
+                            <span style="width:25%;">10.38t</span>
+                        </div>
+                        <div style="width: 100%;display:flex;">
+                            <span style="width:25%;">Tare</span>
+                            <span style="width:25%;">16.04t</span>
+                            <span style="width:25%;">deck 1</span>
+                            <span style="width:25%;">10.38t</span>
+                        </div>
+                        <div style="width: 100%;display:flex;">
+                            <span style="width:25%;">Net</span>
+                            <span style="width:25%;">16.04t</span>
+                            <span style="width:25%;">deck 1</span>
+                            <span style="width:25%;">10.38t</span>
+                        </div>
+                    </div>
+                </main>
+                <footer class="micromodal__footer">
+                    <div class="footer_buttons" style="width: 90%;">
+                        <button type="button" class="footer-btn" id="printTicket2">Print</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal micromodal-slide" id="receival-print-ticket" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="micromodal__container" style="width: 400px;" role="dialog" aria-modal="true"
+                aria-labelledby="modal-1-title">
+                <header class="micromodal__header">
+                    <h2 class="micromodal__title" id="modal-1-title">
+                        A J Bush & Sons - Weighbridge Recording
+                    </h2>
+                    <button class="micromodal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="micromodal__content" id="print-ticket-content">
+                    <div style="width: 100%;">
+                        <div style="text-align:center;">AJ Bush & Sons (Manufactures) P/L</div>
+                        <div style="text-align:center;">ABN 94 000 058 453</div>
+                        <div style="text-align:center;">1106 Windsor Rd. Riverstone</div>
+                        <div style="text-align:center;">Entrace opp. Nelson Rd.</div>
+                        <div style="text-align:center;">Ph. 02 9627 3488 Fax. 02 9627 1275</div>
+                        <div style="margin-bottom: 10px;"></div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Ticket</div>
+                            <div style="width: 60%;font-size: 18px;">199394</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Name</div>
+                            <div style="width: 60%;font-size: 18px;font-weight:bold;">WOLLONDILLY MAM</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Material</div>
+                            <div style="width: 60%;font-size: 18px;">Mixed Abattoir Material</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Time In</div>
+                            <div style="width: 60%;font-size: 18px;">14-9-20 4:39 PM</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Time Out</div>
+                            <div style="width: 60%;font-size: 18px;">14-9-20 7:27 PM</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Gross</div>
+                            <div style="width: 60%;font-size: 18px;font-weight:bold;text-align:right">18320 kg</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Tare</div>
+                            <div style="width: 60%;font-size: 18px;font-weight:bold;text-align:right">16880 kg</div>
+                        </div>
+                        <div style="width: 100%;display: flex;">
+                            <div style="width: 25%;text-align: right;padding-right: 3%;">Net</div>
+                            <div style="width: 60%;font-size: 18px;font-weight:bold;text-align:right">1440 kg</div>
+                        </div>
+                        <div style="margin-bottom: 10px;"></div>
+                        <div style="margin-bottom: 10px;"></div>
+                        <div style="width: 100%">
+                            <p>DRIVER DECLARATION:</p>
+                            <p>I am within my hours for my driving qualification, and fit for duty not being under the
+                                influence of drugs and/or alcohol.</p>
+                            <p>I have checked the load to ensure that it is within axle and mass weight limits.</p>
+                        </div>
+                    </div>
+                </main>
+                <footer class="micromodal__footer">
+                    <div class="footer_buttons" style="width: 90%;">
+                        <button type="button" class="footer-btn" id="printTicket">Print</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="micromodal micromodal-slide" id="receival-print-dialogs" aria-hidden="true">
+        <div class="micromodal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="micromodal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="micromodal__header">
+                    <h2 class="micromodal__title" id="modal-1-title">
+                        A J Bush & Sons - Weighbridge Recording
+                    </h2>
+                    <button class="micromodal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="micromodal__content" id="modal-1-content">
+                    <!-- <p>
+                Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+              </p> -->
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Date</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="date" name="receivalDate" class="date-input" style="width: 150px;"
+                                id="receivalDate">
+                            <div style="width: 30%;"></div>
+                            <span>Regno&nbsp;&nbsp;</span>
+                            <input type="text" name="receivalRegNo" class="classic-input small-input" value="AUSIE"
+                                style="width:100px;" tabindex="0" id="receivalRegNo">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Contractor</div>
+                        <div class="rhs-content width-rhs">
+                            <select name="routeNo" class="w-100 select-input" id="routeNo" tabindex="0">
+                                <option value="">--Select--</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Run No</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="text" name="runNo" class="classic-input small-input" value="03" tabindex="0"
+                                id="runNo">
+                            <div style="width: 15%;"></div>
+                            <span>Load No&nbsp;&nbsp;</span>
+                            <input type="text" name="loadNo" class="classic-input small-input" value="3"
+                                style="width: 45px;" tabindex="0" id="loadNo">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Supplier</div>
+                        <div class="rhs-content width-rhs">
+                            <select name="routeNo" class="w-100 select-input" id="routeNo" tabindex="0">
+                                <option value="">--Select--</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Time</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="text" name="receivalTime" class="classic-input medium-input" tabindex="0"
+                                id="receivalTime" value="13:00">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Groos (kgs)</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="text" name="receivalTime" class="classic-input medium-input text-right"
+                                value="20580.00" tabindex="0" id="receivalTime">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Tare (kgs)</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="text" name="receivalTime" class="classic-input medium-input text-right"
+                                value="15420.00" tabindex="0" id="receivalTime">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Net (kgs)</div>
+                        <div class="rhs-content width-rhs">
+                            <input type="text" name="receivalTime"
+                                class="classic-input medium-input disabled text-right" disabled tabindex="0"
+                                value="500.00" id="receivalTime">
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex mb-3">
+                        <div class="lhs-name width-lhs">Contractor</div>
+                        <div class="rhs-content width-rhs">
+                            <select name="routeNo" class="w-100 select-input" id="routeNo" tabindex="0">
+                                <option value="">--Select--</option>
+                            </select>
+                        </div>
+                    </div>
+                </main>
+                <footer class="micromodal__footer">
+                    <!-- <button class="micromodal__btn modal__btn-primary">Continue</button>
+              <button class="micromodal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button> -->
+                    <div class="footer_buttons" style="width: 90%;">
+                        <button type="button" class="footer-btn" id="btnReceivalNext">Next</button>
+                        <button type="button" id="btnReceivalPrev" class="footer-btn">Previous</button>
+                        <button type="button" id="btnReceivalDel" class="footer-btn">Delete</button>
+                        <button type="button" id="btnReceivalNew" class="footer-btn">New</button>
+                        <button type="button" id="btnReceivalSave" class="footer-btn">Save</button>
+                        <button type="button" id="btnReceivalNext" class="footer-btn" data-micromodal-close
+                            aria-label="Close this dialog window">Close</button>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/modal.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 

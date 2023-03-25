@@ -118,7 +118,7 @@
     font-size:2.0rem;
 }
 
-.select-input {
+.select-input, .date-input {
     height: auto;
     border: 1px solid lightgray;
     background-color: white;
@@ -131,9 +131,14 @@
     height: 27px;
     border: 1px solid lightgray;
     background-color: white;
+    color: black;
     padding: 3px;
     border-radius: 0;
     width: 70%;
+}
+
+.classic-input.disabled {
+    background-color: rgb(224, 218, 218);
 }
 
 .v-align-middle {
@@ -208,4 +213,70 @@
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+.row-group {
+    float: left;
+    width: 100%;
+}
+
+.width-lhs {
+    width: 18%;
+}
+
+.width-rhs {
+    width: 72%;
+}
+
+.w-100 {
+    width: 100%;
+}
+.d-flex {
+    display: flex;
+}
+
+.w-30 {
+    width: 40%;
+}
+
+.small-input {
+    width: 70px;
+}
+
+.medium-input {
+    width: 120px;
+}
+
+.rhs-content {
+    display: flex;
+}
+
+.footer_buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-btn {
+    border: 1px solid #7d7d7d;
+    width: 70px;
+    padding: 3px;
+    font-size: 12px;
+    background-color: #dddddd;
+    border-radius: 0;   
+}
+
+.lhs-name {
+    font-weight: bold;
+}
+
+.print-left {
+    width: 25%;
+    text-align: right;
+    padding-right: 3%;
+}
+
+.print-right {
+    width: 60%;font-size: 18px;
 }

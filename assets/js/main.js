@@ -7,6 +7,20 @@ function setProps() {
     container.style.height = window.innerHeight;
 }
 
+
+MicroModal.init({
+    onShow: function(modal) { console.info(`${modal.id} is shown`) }, // [1]
+    onClose: function(modal) { console.info(`${modal.id} is hidden`)}, // [2]
+    openTrigger: 'data-custom-open', // [3]
+    closeTrigger: 'data-custom-close', // [4]
+    openClass: 'is-open', // [5]
+    disableScroll: true, // [6]
+    disableFocus: false, // [7]
+    awaitOpenAnimation: false, // [8]
+    awaitCloseAnimation: false, // [9]
+    debugMode: true // [10]
+  });
+
 /* Onload & On Resize initialization - Start */
 window.addEventListener('resize', function(event) {
     setProps();
@@ -37,6 +51,9 @@ var clearDispatchBtn = winDocument.getElementById("clearDispatchBtn");
 var nav1 = winDocument.getElementById("nav-1");
 var nav2 = winDocument.getElementById("nav-2");
 var nav3 = winDocument.getElementById("nav-3");
+
+var printTicket = winDocument.getElementById("printTicket");
+var printTicket2 = winDocument.getElementById("printTicket2");
 /* Button Declarations - End */
 
 /* Action Implementations - Start */
@@ -96,6 +113,9 @@ tareOutBtn.addEventListener("click", function(event) {
 
 printReceivalBtn.addEventListener("click", function(event) {
     event.preventDefault();
+    //MicroModal.show("receival-print-dialogs");
+    MicroModal.show("receival-print-ticket");
+    //MicroModal.show("receival-print-ticket2");
 });
 
 receivalClearBtn.addEventListener("click", function(event) {
@@ -161,6 +181,22 @@ nav3.addEventListener("click", function(event) {
         mainNavItem.classList.add("closed");
     }
 });
+
+printTicket.addEventListener("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    //get the content from "print-ticket-content" id.
+});
+
+printTicket2.addEventListener("click", function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    //get the content from "print-ticket-content2" id.
+});
+
+
 /* Action Implementations - End */
 
 /*Custom Actions - Start */
