@@ -280,3 +280,11 @@
 .print-right {
     width: 60%;font-size: 18px;
 }
+
+.non-admin-user {
+    visibility: hidden;
+}
+
+table tbody tr.selected {
+    background-color: #CFE2FF;
+}

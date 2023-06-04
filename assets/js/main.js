@@ -56,6 +56,9 @@ var printTicket = winDocument.getElementById("printTicket");
 var printTicket2 = winDocument.getElementById("printTicket2");
 /* Button Declarations - End */
 
+var user = "admin1";
+var mainNavigation = winDocument.getElementById("main-navigations");
+
 /* Action Implementations - Start */
 receivalButton.addEventListener("click", function(event) {
     event.preventDefault();
@@ -196,6 +199,21 @@ printTicket2.addEventListener("click", function(event) {
     //get the content from "print-ticket-content2" id.
 });
 
+winDocument.querySelectorAll("#receival-log-table table tbody").forEach(function(event) {
+    event.addEventListener("click", function(clickEvent) {
+        clickEvent.target.parentNode.classList.toggle("selected");
+    })
+})
+
+winDocument.querySelectorAll("#dispatch-log-table table tbody").forEach(function(event) {
+    event.addEventListener("click", function(clickEvent) {
+        clickEvent.target.parentNode.classList.toggle("selected");
+    })
+})
+
+if (user != "admin") {
+    mainNavigation.classList.add("non-admin-user");
+}
 
 /* Action Implementations - End */
 
